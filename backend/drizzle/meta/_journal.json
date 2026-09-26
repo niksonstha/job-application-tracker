@@ -8,6 +8,27 @@
       "when": 1790458207945,
       "tag": "0000_careful_hercules",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1790458527888,
+      "tag": "0001_simple_echo",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1790458681175,
+      "tag": "0002_slippery_rage",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1790458823492,
+      "tag": "0003_glorious_hairball",
+      "breakpoints": true
     }
   ]
 }
