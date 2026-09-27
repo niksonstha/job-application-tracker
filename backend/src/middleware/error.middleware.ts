@@ -1,4 +1,6 @@
 import type { ErrorRequestHandler } from "express";
+import { ZodError } from "zod";
+
 import { AppError } from "../utils/app-error.js";
 
 export const errorMiddleware: ErrorRequestHandler = (
@@ -7,6 +9,16 @@ export const errorMiddleware: ErrorRequestHandler = (
   res,
   _next,
 ) => {
+  if (error instanceof ZodError) {
+    return res.status(400).json({
+      success: false,
+      error: {
+        message: "Validation failed",
+        issues: error.issues,
+      },
+    });
+  }
+
   if (error instanceof AppError) {
     return res.status(error.statusCode).json({
       success: false,
