@@ -29,6 +29,13 @@
       "when": 1790458823492,
       "tag": "0003_glorious_hairball",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1790529472653,
+      "tag": "0004_pretty_excalibur",
+      "breakpoints": true
     }
   ]
 }
